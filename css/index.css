@@ -490,14 +490,14 @@ header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption 
     cursor: pointer;
 }
 
-.modal-dialog {
+/* .modal-dialog {
 
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
+} */
 
 .modal-content video {
     border-radius: 5px;
