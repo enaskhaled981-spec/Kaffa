@@ -1,0 +1,13 @@
+body{
+         font-family: "Oswald", sans-serif;
+        
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sansita Swashed", system-ui;}
+  span.text{
+    position: relative;
+    z-index: 2;
+}
+/* section{
+  padding: 20px;
+} */

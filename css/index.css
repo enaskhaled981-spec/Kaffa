@@ -1,0 +1,579 @@
+header nav {
+    width: 100%;
+    z-index: 2;
+}
+
+
+header nav .nav-link {
+    overflow: hidden;
+    letter-spacing: 2px;
+    position: relative;
+    border-radius: 5px;
+}
+
+header nav .nav-link::before,
+header nav .nav-link span.shape,
+header nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100%/3);
+    background-color: var(--bs-success);
+    position: absolute;
+    transition-duration: .5s;
+}
+
+header nav .nav-link::before {
+    top: 0;
+    left: -100%;
+}
+
+header nav .nav-link:hover::before {
+    left: 0;
+}
+
+header nav .nav-link span.shape {
+    top: calc(100%/3);
+    right: -100%;
+}
+
+header nav .nav-link:hover span.shape {
+    right: 0;
+}
+
+header nav .nav-link::after {
+    bottom: 0;
+    left: -100%;
+}
+
+header nav .nav-link:hover::after {
+    left: 0;
+}
+
+header #carouselExampleCaption .carousel-indicators button {
+    background-color: var(--bs-success);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item:nth-of-type(1) {
+    background-image: url("../images/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item:nth-of-type(2) {
+    background-image: url("../images/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item:nth-of-type(3) {
+    background-image: url("../images/banner3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item:nth-of-type(4) {
+    background-image: url("../images/banner4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item::before {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption {
+    /* bottom: 7rem;
+    left: 0%; */
+    /* transform: translate(-25%, -25%); */
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption>* {
+    position: initial;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item.active .carousel-caption>* {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption p {
+    letter-spacing: 2px;
+    transition-delay: .2s;
+    width: 75%;
+}
+
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons {
+
+    transition-delay: .4s;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a {
+    position: relative;
+    overflow: hidden;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a::after,
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    border: 21px solid;
+    border-left-color: var(--bs-success);
+    border-right-color: var(--bs-success);
+    border-top-color: var(--bs-success);
+    border-bottom-color: var(--bs-success);
+    transition-duration: .5s;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a::before {
+
+    left: -100%;
+
+
+    border-right-color: transparent;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a:hover:before {
+    left: 0;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a::after {
+    right: -100%;
+
+    border-left-color: transparent;
+
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a:hover::after {
+    right: 0;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a span {
+    position: relative;
+    z-index: 2;
+    transition-duration: .5s;
+}
+
+header #carouselExampleCaption .carousel-inner .carousel-item .carousel-caption .buttons a:hover span {
+    color: #fff;
+}
+
+#About {
+    background-image: url("../images/leaves_pattern.png");
+    background-position: center;
+
+    background-color: var(--bs-success);
+}
+
+#About .part1 button {
+
+    overflow: hidden;
+    border: 1px solid #fff;
+    color: #fff;
+    position: relative;
+}
+
+#About .part1 button::after, #About .part1 button::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    transition: .5s;
+
+}
+
+#About .part1 button::after {
+    bottom: -50%;
+    left: 0;
+}
+
+#About .part1 button:hover::after {
+    bottom: 0px;
+}
+
+#About .part1 button::before {
+    top: -50%;
+    left: 0;
+
+}
+
+#About .part1 button:hover::before {
+    top: 0;
+}
+
+
+#About .part1 button:hover span.text {
+
+    color: var(--bs-success);
+
+}
+
+#About .part2 .box .specialcard {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#About .part2 .box .specialcard .front {
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition-duration: .5s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#About .part2 .box:nth-of-type(1) .specialcard .front {
+    background-image: url("../images/about_front_01.jpg");
+}
+
+#About .part2 .box:nth-of-type(2) .specialcard .front {
+    background-image: url("../images/about_front_02.jpg");
+}
+
+#About .part2 .box:nth-of-type(3) .specialcard .front {
+    background-image: url("../images/about_front_03.jpg");
+}
+
+#About .part2 .box .specialcard:hover .front {
+    transform: rotateY(180deg);
+}
+
+#About .part2 .specialcard .back {
+
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition-duration: .5s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#About .part2 .box:nth-of-type(1) .specialcard .body {
+    background-color: #404042;
+}
+
+#About .part2 .box:nth-of-type(2) .specialcard .body {
+    background-color: #87744A;
+}
+
+#About .part2 .box:nth-of-type(3) .specialcard .body {
+    background-color: #6D1F37;
+}
+
+#About .part2 .box .specialcard .body button {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding-inline: 20px;
+    transition-duration: .5s;
+}
+
+#About .part2 .box:nth-of-type(1) .specialcard .body button:hover {
+    background-color: #fff;
+    color: #404042;
+
+}
+
+#About .part2 .box:nth-of-type(2) .specialcard .body button:hover {
+    background-color: #fff;
+    color: #87744A;
+
+}
+
+#About .part2 .box:nth-of-type(3) .specialcard .body button:hover {
+    background-color: #fff;
+    color: #6D1F37;
+}
+
+#About .part2 .box .specialcard .body button i {
+
+    transition-duration: .5s;
+}
+
+#About .part2 .box .specialcard .body button:hover i {
+    margin-left: 5px;
+}
+
+#About .part2 .box .specialcard:hover .back {
+    transform: rotateY(0deg);
+}
+
+#Services {
+    background-image: url("../images/services-beans_bg.jpg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#Services::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+#Services .container {
+    position: relative;
+}
+
+#Services .content img {
+    animation-name: animation-1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#Menu {
+    background-image: url("../images/leaves_pattern.png");
+    background-color: var(--bs-success);
+    /* background-position: center; */
+
+}
+#Menu .container{
+    padding: 20px;
+}
+
+#Menu ul {
+
+    width: fit-content;
+    margin: auto;
+    column-gap: 10px;
+
+}
+
+
+#Menu ul li button {
+    color: #fff;
+    transition-duration: .5s;
+
+}
+
+#Menu ul li button.active {
+    color: var(--bs-success);
+    background-color: #fff;
+}
+
+#Menu .tab-pane .box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition-duration: .5s;
+    transform: scale(0);
+    max-width: 280px;
+    margin: auto;
+}
+
+#Menu .tab-pane.show .box {
+    transform: scale(1);
+}
+
+#Menu .tab-pane .box img {
+    transform: scale(.8);
+    transition-duration: 1s;
+    margin: auto;
+    display: block;
+}
+
+#Menu .tab-pane .box:hover img {
+    transform: scale(1.1);
+}
+
+#Menu .tab-pane .box p,
+#Menu .tab-pane .box h6 {
+    position: absolute;
+    left: 0;
+    background-image: url("../images/leaves_pattern.png");
+
+    background-color: var(--bs-success);
+    padding: 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#Menu .tab-pane .box:hover p,
+#Menu .tab-pane .box:hover h6 {
+    transform: translateX(0px);
+}
+
+#Menu .tab-pane .box h6 {
+    top: 10px;
+}
+
+#Menu .tab-pane .box p {
+    bottom: 10px;
+}
+
+#Beans-Coffee {
+    background-image: url("../images/Beans_ice_drinks_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Beans-Coffee::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#Beans-Coffee .content {
+    position: relative;
+}
+
+#Beans-Coffee h2 {
+    text-shadow: 3px 3px 1px #000;
+}
+
+#Beans-Coffee i {
+    color: #fff;
+    transition-duration: .5s;
+}
+
+#Beans-Coffee i:hover {
+    color: var(--bs-success);
+    cursor: pointer;
+}
+.modal-dialog{
+   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.modal-content video{
+    border-radius: 5px;
+    width:100%;
+}
+
+#Book {
+    background-image: url("../images/Book_black_bg.png");
+
+}
+
+#Book .container {
+    background-image: url("../images/Book_girl.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 50%;
+    /* background-color: aqua; */
+
+
+}
+
+#Book form {
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+    width: 500px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-block: 10px;
+    margin-top: 25px;
+
+}
+
+#Book textarea {
+    resize: none;
+}
+
+#Book button {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#Book button{
+    background-color: var(--bs-success);
+border-color: #000;
+    border-radius: 10px;
+
+}
+/* #Book button:hover{
+border: 1px solid #000;
+} */
+#Book button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    /* outline: 1px solid #000; */
+    position: absolute;
+    left: 0;
+    /* transform: translateY(0); */
+     bottom: 0;
+     transition-duration: .5s; 
+    }
+    #Book button:hover {
+        border-color: #fff;
+    }
+    #Book button:hover::after{
+    bottom:100% ;
+}
+
+
+
+/* #Book form button span.text {
+    position: relative;
+    z-index: 1;
+} */
+
+footer {
+    background-color: #333333;
+
+}
